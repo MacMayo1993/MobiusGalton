@@ -42,7 +42,7 @@ def propagate_coherent(W: int, H: int) -> tuple[float, np.ndarray]:
     # State: complex array of shape (W, 2)  — (position, parity)
     # parity 0 = even, parity 1 = odd
     psi = np.zeros((W, 2), dtype=complex)
-    psi[0, 0] = 1.0          # Start at x=0, even parity
+    psi[W // 2, 0] = 1.0     # Start at centre (away from seam), even parity
 
     split = 1.0 / np.sqrt(2)  # 50/50 beamsplitter amplitude
 

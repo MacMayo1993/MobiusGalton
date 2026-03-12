@@ -48,7 +48,7 @@ def run_simulation(
     parities : ndarray, shape (N,), dtype int
         Final parities: 0 = even, 1 = odd.
     """
-    positions = np.zeros(N, dtype=np.float64)
+    positions = RNG.integers(0, W, size=N).astype(np.float64)
     parities  = np.zeros(N, dtype=np.int32)   # 0 = even, 1 = odd
 
     for _ in range(H):
