@@ -1,0 +1,20 @@
+Item,Part Number,Description,Qty,Unit Price (USD),Subtotal
+Beamsplitter cube 50:50 (780nm),BS010,Non-polarising cube beamsplitter 10mm,16,89.00,1424.00
+Half-wave plate (780nm),WPH05M-780,Zero-order half-wave plate Ø1/2" 780nm (seam flip),2,185.00,370.00
+Cage plate 30mm,CP01,30mm cage plate with SM1 thread,24,23.50,564.00
+Cage rod Ø6mm 100mm,ER100,Stainless cage rod 100mm,40,6.50,260.00
+Cage rod Ø6mm 50mm,ER50,Stainless cage rod 50mm,20,4.50,90.00
+Kinematic mount,KM05,Kinematic platform mount (per BS cube row),8,42.00,336.00
+SM1 lens tube,SM1L10,SM1 lens tube 1 inch long,8,12.00,96.00
+Alignment disk,DG10-1500,Ground glass diffuser for alignment,2,25.00,50.00
+Single-mode fibre (780nm),P3-780A-FC-1,FC/PC patch cable SM 780nm 1m,2,125.00,250.00
+Collimating lens,F810APC-780,Fibre collimator 780nm,2,210.00,420.00
+Polarising beamsplitter,PBS101,Polarising cube beamsplitter 10mm 780nm,2,89.00,178.00
+Parity detector mount,CP02,Cage plate + detector interface,2,28.00,56.00
+Optical breadboard 300x600mm,MB3060,Aluminium breadboard M6,1,185.00,185.00
+Post holders (assorted),PH series,Ø1/2" post holders various heights,20,8.00,160.00
+Posts Ø1/2" 2",TR2,Ø12.7mm post 2 inch,20,6.50,130.00
+Attenuated laser source 780nm,S1FC780,Superluminescent LED source 780nm,1,1250.00,1250.00
+SPAD detector,SPCM-AQRH-14,Single photon avalanche detector 780nm,2,4500.00,9000.00
+Timing unit,HydraHarp 400,Time-correlated single photon counter,1,12000.00,12000.00
+TOTAL,,,,, 26819.00
