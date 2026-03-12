@@ -48,7 +48,7 @@ def quantum_walk_single_photon(
     """
     # Use vectorized classical simulation — Born-rule at each step
     # (equivalent to decoherent position measurement each row)
-    positions = np.zeros(N, dtype=np.float64)
+    positions = RNG.integers(0, W, size=N).astype(np.float64)
     parities  = np.zeros(N, dtype=np.int32)
 
     for _ in range(H):
