@@ -6,6 +6,20 @@ export type Mode = "standard" | "cylinder" | "mobius";
 
 const K_STAR = 1 / (2 * Math.LN2);
 
+function modeBtnStyle(active: boolean): React.CSSProperties {
+  return {
+    padding: "5px 14px",
+    borderRadius: 6,
+    border: active ? "1px solid #7eb8f7" : "1px solid #444",
+    background: active ? "#1a2a3a" : "transparent",
+    color: active ? "#7eb8f7" : "#888",
+    cursor: "pointer",
+    fontSize: 13,
+    fontWeight: active ? 600 : 400,
+    transition: "all 0.15s",
+  };
+}
+
 const styles: Record<string, React.CSSProperties> = {
   container: {
     maxWidth: 1100,
@@ -62,17 +76,6 @@ const styles: Record<string, React.CSSProperties> = {
     display: "flex",
     gap: 6,
   },
-  modeBtn: (active: boolean): React.CSSProperties => ({
-    padding: "5px 14px",
-    borderRadius: 6,
-    border: active ? "1px solid #7eb8f7" : "1px solid #444",
-    background: active ? "#1a2a3a" : "transparent",
-    color: active ? "#7eb8f7" : "#888",
-    cursor: "pointer",
-    fontSize: 13,
-    fontWeight: active ? 600 : 400,
-    transition: "all 0.15s",
-  }),
   statsRow: {
     display: "flex",
     gap: 20,
@@ -150,7 +153,7 @@ export default function App() {
           <span style={styles.label}>Topology</span>
           <div style={styles.modeButtons}>
             {(["standard", "cylinder", "mobius"] as Mode[]).map(m => (
-              <button key={m} style={styles.modeBtn(mode === m)}
+              <button key={m} style={modeBtnStyle(mode === m)}
                 onClick={() => setMode(m)}>
                 {m.charAt(0).toUpperCase() + m.slice(1)}
               </button>
